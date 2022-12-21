@@ -3728,15 +3728,20 @@ if ( False ):
 # DEBUG logging gives you huge parselog.txt files.
 # ERROR logging just gives syntax error information.
 #
+# Since we will be combining this with the instruction parser it is
+# important to give these distinct names and distinct parser table
+# filenames. See: https://www.dabeaz.com/ply/ply.html#ply_nn2
+# and go to the bottom of section 6.1
+#
 # ============================================================
 
-def parse( inputstring, lex_debug = False, yacc_debug = True ):
+def inst_parse( inputstring, lex_debug = False, yacc_debug = True ):
     logging.basicConfig( level = logging.DEBUG,
                          filename = "parselog.txt", filemode = "w",
                          format = "%(filename)10s:%(lineno)4d:%(message)s" )
     log = logging.getLogger()
 
-    lexer = lex.lex( debug = lex_debug, debuglog = log )
-    parser = yacc.yacc( debug = yacc_debug, debuglog = log )
-    parsetree = parser.parse( inputstring, debug = log )
+    i_lexer = lex.lex( debug = lex_debug, debuglog = log )
+    i_parser = yacc.yacc( tabmodule = 'inst_parsertable', debug = yacc_debug, debugfile = 'inst_parser.out' )
+    parsetree = i_parser.parse( inputstring, lexer = i_lexer, debug = log )
     return parsetree
