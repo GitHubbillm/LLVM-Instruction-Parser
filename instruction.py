@@ -57,7 +57,7 @@ class Instruction:
         # For debugging we can look at the graph and print the node
         # serial numbers so we cansee if things are right.
         parser._Node__serial_number = 0
-        self.root = parser.parse( t )
+        self.root = parser.inst_parse( t )
         if ( self.root == None ):
             print( "The instruction did not parse correctly:" )
             print( instruction_string )
