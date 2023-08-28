@@ -10,7 +10,7 @@
 #
 # The grammar I started with is based on the above references, which
 # came from looking at the original LLVM C++ code. But the actual C++
-# code has places where it is forgiving, epends on trailing context,
+# code has places where it is forgiving, depends on trailing context,
 # and so on. Many of these were encountered when compiling the SPEC
 # CPU benchmarks and the grammar was corrected as I went along. These
 # corrections are noted in a corresponding Word doc and in comments
