@@ -12,7 +12,7 @@ import sys
 # import os
 
 # There must be a better way to do this, but I don't know what it is.
-sys.path.append('/Users/billmahoney/Dropbox/Projects/LLVM_CWE/instruction_parser/ply-3.11')
+sys.path.append('/Users/xyzzy/LLVM_PLY/ply-3.11')
 import llvm_instruction_parser as parser
 
 ############################################################
@@ -199,8 +199,6 @@ if True:
 # These are from the compiler explorer web site, the "sander" little
 # function, with instructions that are syntactically identical
 # removed.
-
-# Need to fix this - works up to LLVM 14 but not 15.
 
 if False:
     testdata = [
