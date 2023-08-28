@@ -1,4 +1,4 @@
-# LLVM_instruction_parser
+# LLVM Instruction Parser
 ## Python code that will create a parse tree in memory based on one LLVM instruction.
 
 The purpose of this code is to take one LLVM instruction and parse it, returning a parse tree of nodes that are of type “class Node”. I decided to put it as open in case anyone needs to do something similar. 
