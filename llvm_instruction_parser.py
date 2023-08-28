@@ -22,7 +22,7 @@ import sys
 import os
 
 # Put "ply" under this directory and put a (full) pathname to it.
-sys.path.append('/Users/billmahoney/Dropbox/Projects/LLVM_CWE/ply-3.11')
+sys.path.append('/Users/xyzzy/LLVM_PLY/ply-3.11')
 
 import ply.lex as lex
 import ply.yacc as yacc
