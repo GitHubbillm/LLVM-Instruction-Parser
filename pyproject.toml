@@ -34,6 +34,9 @@ dependencies = [
 [tool.setuptools.dynamic]
 version = {attr = "llvm_inst_parser.__version__"}
 
+[tool.setuptools.package-data]
+poker = ["py.typed"]
+
 [project.urls]
 "Source" = "https://github.com/GitHubbillm/LLVM-Instruction-Parser"
 "Bug Tracker" = "https://github.com/GitHubbillm/LLVM-Instruction-Parser/issues"
