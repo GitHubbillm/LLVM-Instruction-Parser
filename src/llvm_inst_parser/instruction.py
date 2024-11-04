@@ -97,7 +97,6 @@ class Instruction:
                 return True
         return False
     
-    # types: Error running mypy: No data received
     def get_lhs(self) -> str | None:
         here = self.root
         if ( len( here.children ) >= 3 ):
