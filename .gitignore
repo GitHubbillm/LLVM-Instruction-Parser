@@ -1,3 +1,9 @@
+# Program-specific generated files
+testdata_*.dot
+inst_parser.out
+parselog.txt
+inst_parsertable.py
+
 # Temp file during Mypy processing
 mypy_annotate.dat
 test-results.xml

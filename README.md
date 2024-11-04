@@ -16,3 +16,14 @@ There’s a simple test module you can use to play around.
 
 Hope it is useful to someone.
 
+## Installation
+Ensure Python 3 is installed, and use pip to install this project.
+
+```bash
+pip install git+https://github.com/GitHubbillm/LLVM-Instruction-Parser.git
+```
+
+If you have cloned locally:
+```bash
+pip install -e .
+```
